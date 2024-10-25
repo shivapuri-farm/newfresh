@@ -20,7 +20,7 @@
         }
 
         .footimg {
-            width: 60%;
+            width: 80%;
             height: auto;
         }
 
@@ -37,11 +37,11 @@
         }
 
         .product-card {
-             /* Adjusted padding for better spacing */
+             padding: 10px;/* Adjusted padding for better spacing */
             flex: 1 1 21%; /* Flex-grow, shrink, and basis for responsive layout */
             display: flex;
             flex-direction: column;
-            margin: 5px; /* Added margin between cards */
+            /* Added margin between cards */
             transition: background-color 0.3s; /* Smooth transition on hover */
         }
 
@@ -50,25 +50,24 @@
         .product-image img {
             max-width: 100%;
             border-radius: 5px; /* Rounded corners for images */
+            border: 5px solid black;
         }
 
         .product-info {
-            margin-top: auto;
+           display: flex;
+           flex-wrap: wrap;
+           
+           
+           
         }
 
-        .product-info h5 {
-            font-size: 1em; /* Increased font size for better readability */
-        }
+       
 
-        .product-info h6 {
-            font-size: 0.9em; /* Slightly larger font size */
-            color: #000000; /* Light color for better contrast */
-        }
 
         footer {
-            background-color: #000000;
+            background-color: #ffffff;
             font-size: 0.9em;
-            color: #ffffff;
+            color: #000000;
             padding: 10px;
         }
 
@@ -84,7 +83,21 @@
             flex-direction: column;
             justify-content: center;
             margin: 20px;
+            gap:20px;
+            background-color: rgb(0, 0, 0);
+            padding: 50px;
+            color: rgba(255, 255, 255, 0.747);
         }
+
+        #social{
+            background-color: black;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
 
         @media (max-width: 920px) {
             .product-card {
@@ -121,8 +134,8 @@
                 <img src="img/milk.png" alt="Cow Milk">
             </div>
             <div class="product-info">
-                <h5>दूध (Fresh cow milk)</h5>
-                <h6>प्रति लिटर रु १२०</h6>
+                <h5>Fresh Milk - दूध - Rs. 120 per litre </h5>
+                
             </div>
         </div>
 
@@ -131,8 +144,8 @@
                 <img src="img/cauli.png" alt="Cow Milk">
             </div>
             <div class="product-info">
-                <h5>cauliflower</h5>
-                <h6>प्रति kg Rs. 150</h6>
+                <h5>Cauliflower - फूल काउली  - Rs. 150 per Kg</h5>
+                
             </div>
         </div>
 
@@ -141,8 +154,8 @@
                 <img src="img/dahi.png" alt="Dahi">
             </div>
             <div class="product-info">
-                <h5>दही (Dahi plain)</h5>
-                <h6>दही प्रति लिटर रु १४०</h6>
+                <h5>Plain Fresh Curd - दही - Rs. 140 per litre</h5>
+                
             </div>
         </div>
 
@@ -151,8 +164,8 @@
                 <img src="img/ghee.png" alt="Ghee">
             </div>
             <div class="product-info">
-                <h5>गाई को घिउ - Ghee</h5>
-                <h6>किलो १२००</h6>
+                <h5>Pure fresh Ghee - गाई को घिउ - 1200 per Kg</h5>
+               
             </div>
         </div>
 
@@ -161,8 +174,8 @@
                 <img src="img/paneer.png" alt="Paneer">
             </div>
             <div class="product-info">
-                <h5>पनीर - Paneer</h5>
-                <h6>किलो Rs. 850</h6>
+                <h5>Paneer - पनीर - 850 per kg</h5>
+                
             </div>
         </div>
 
@@ -171,8 +184,8 @@
                 <img src="img/avacado.png" alt="Avocado">
             </div>
             <div class="product-info">
-                <h5>अवाकार्डो - Avocado</h5>
-                <h6>रु ३०० किलो</h6>
+                <h5>Avocardo - अवाकार्डो - 350 per kg</h5>
+                
             </div>
         </div>
 
@@ -181,8 +194,8 @@
                 <img src="img/rayo.png" alt="Hariyo Saag">
             </div>
             <div class="product-info">
-                <h5>रयो को साग - Hariyo saag</h5>
-                <h6>रु ५० मुठा</h6>
+                <h5>Hariyo Saag - रयो को साग - 50 per mutho</h5>
+              
             </div>
         </div>
 
@@ -191,8 +204,8 @@
                 <img src="img/chicken.png" alt="Local Chicken">
             </div>
             <div class="product-info">
-                <h5>लोकल कुखुरा - Local Chicken</h5>
-                <h6>२००० एउटा सिंगे २ किलो</h6>
+                <h5>Local Chicken - लोकल कुखुरा - 950 per kg</h5>
+                
             </div>
         </div>
 
@@ -201,8 +214,8 @@
                 <img src="img/maal.png" alt="Organic Fertilizer">
             </div>
             <div class="product-info">
-                <h5>आर्गेनिक गाई को मल - Fertilizer for Garden</h5>
-                <h6>रु २०० को ५० किलो बोरा</h6>
+                <h5>Organic Fertilizer - आर्गेनिक गाई को मल - 300 per 50kg Bag</h5>
+                
             </div>
         </div>
     </section>
@@ -234,11 +247,11 @@
                 </div>
                 <br>
                 
-                <div class="footer-row">
+                <div id="social" class="footer-row">
                 <h1><strong>सम्पर्क - 9864258042, 9849043883</strong></h1><br>
-                <h2><strong>फेसबुक पेज <a href="#">www.facebook.com/shivapurifarm</a></strong></h2>
-                <h2><strong>व्हाट स अप ग्रुप <a href="#">whatsapp.com/shivapurifarm</a></strong></h2>
-                <h2><strong>भाईबर ग्रुप <a href="#">viber.com/shivapurifarm</a></strong></h2>
+                <h2><strong>फेसबुक पेज <br> <a href="#">www.fb.com/shivapurifarm</a></strong></h2>
+                <h2><strong>व्हाट स अप ग्रुप <br> <a href="#">wps.com/shivapurifarm</a></strong></h2>
+                <h2><strong>भाईबर ग्रुप <br> <a href="#">viber.com/shivapurifarm</a></strong></h2>
                 </div>
                 <br>
              
